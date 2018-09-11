@@ -11,6 +11,7 @@
         <module>Core-Swagger-Common</module>
         <module>Core-Swagger-Plugin</module>
         <module>Core-Swagger-Plugin-Demo</module>
+        <module>Spring-Boot-Swagger</module>
     </modules>
     <packaging>pom</packaging>
 

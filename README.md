@@ -26,4 +26,4 @@
     <version>3.3.9</version>
 </dependency>
 ```
-2.需要在maven工程中指定pom.xml文件的package格式为
+> 2.需要在maven工程中指定pom.xml文件的package格式为
