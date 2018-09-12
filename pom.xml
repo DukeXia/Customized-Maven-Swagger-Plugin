@@ -6,7 +6,7 @@
 
     <groupId>com.cmcm.maven</groupId>
     <artifactId>Customized-Swagger-Plugin</artifactId>
-    <version>1.0-SNAPSHOT</version>
+    <version>1.0</version>
     <modules>
         <module>Core-Swagger-Common</module>
         <module>Core-Swagger-Plugin</module>

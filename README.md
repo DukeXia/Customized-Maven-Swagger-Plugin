@@ -26,4 +26,23 @@
     <version>3.3.9</version>
 </dependency>
 ```
-> 2.需要在maven工程中指定pom.xml文件的package格式为
+> 2.需要在maven工程中指定pom.xml文件的package格式为maven-plugin   
+3.需要在插件项目中使用一个把项目打包成maven插件项目的插件
+```
+<plugin>
+    <groupId>org.apache.maven.plugins</groupId>
+    <artifactId>maven-plugin-plugin</artifactId>
+    <version>2.5.1</version>
+    <configuration>
+        <goalPrefix>doc</goalPrefix>
+    </configuration>
+    <executions>
+        <execution>
+            <id>generated-helpmojo</id>
+            <goals>
+                <goal>helpmojo</goal>
+            </goals>
+        </execution>
+    </executions>
+</plugin>
+```

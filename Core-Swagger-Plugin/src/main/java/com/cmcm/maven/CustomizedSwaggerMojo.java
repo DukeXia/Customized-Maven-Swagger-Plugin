@@ -5,14 +5,15 @@ import org.apache.maven.plugin.MojoExecutionException;
 import org.apache.maven.plugin.MojoFailureException;
 
 /**
+ * @goal generate-doc
+ * @phase compile
  * @author Spontaneously
- * @time 2018-09-11 下午4:27
  */
 public class CustomizedSwaggerMojo extends AbstractMojo {
 
     @Override
     public void execute() throws MojoExecutionException, MojoFailureException {
-        System.out.println("指定了自己指定的Mojo");
+        this.getLog().info("插件生效");
     }
 
 }
