@@ -2,15 +2,17 @@
 
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
-    <parent>
+    <!--<parent>
         <artifactId>Customized-Swagger-Plugin</artifactId>
         <groupId>com.cmcm.maven</groupId>
         <version>1.0</version>
-    </parent>
+    </parent>-->
     <modelVersion>4.0.0</modelVersion>
 
     <name>Core-Swagger-Plugin</name>
+    <groupId>com.cmcm.maven</groupId>
     <artifactId>Core-Swagger-Plugin</artifactId>
+    <version>1.0.0</version>
     <packaging>maven-plugin</packaging>
 
     <description>自动生成RestAPI的Maven插件</description>
@@ -35,7 +37,7 @@
         <dependency>
             <groupId>com.cmcm.maven</groupId>
             <artifactId>Core-Swagger-Common</artifactId>
-            <version>1.0</version>
+            <version>1.0.0</version>
         </dependency>
         <dependency>
             <groupId>junit</groupId>
@@ -53,7 +55,7 @@
                 <version>3.4</version>
                 <configuration>
                     <goalPrefix>doc</goalPrefix>
-                    <skipErrorNoDescriptorsFound>true</skipErrorNoDescriptorsFound>
+                    <!--<skipErrorNoDescriptorsFound>true</skipErrorNoDescriptorsFound>-->
                 </configuration>
                 <executions>
                     <execution>
@@ -74,8 +76,6 @@
                     <target>1.8</target>
                 </configuration>
             </plugin>
-
-
         </plugins>
     </build>
 </project>

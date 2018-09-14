@@ -10,11 +10,11 @@
 	<name>Spring-Boot-Swagger</name>
 	<description>Demo project for Spring Boot And Swagger</description>
 
-	<parent>
+	<!--<parent>
 		<artifactId>Customized-Swagger-Plugin</artifactId>
 		<groupId>com.cmcm.maven</groupId>
 		<version>1.0-SNAPSHOT</version>
-	</parent>
+	</parent>-->
 
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>

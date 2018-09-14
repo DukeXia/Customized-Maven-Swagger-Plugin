@@ -6,14 +6,15 @@
 
     <groupId>com.cmcm.maven</groupId>
     <artifactId>Customized-Swagger-Plugin</artifactId>
-    <version>1.0</version>
-    <modules>
-        <module>Core-Swagger-Common</module>
-        <module>Core-Swagger-Plugin</module>
-        <module>Core-Swagger-Plugin-Demo</module>
-        <module>Spring-Boot-Swagger</module>
-    </modules>
     <packaging>pom</packaging>
+    <version>1.0</version>
+
+    <!--<modules>-->
+        <!--<module>Core-Swagger-Common</module>-->
+        <!--<module>Core-Swagger-Plugin</module>-->
+        <!--<module>Core-Swagger-Plugin-Demo</module>-->
+        <!--<module>Spring-Boot-Swagger</module>-->
+    <!--</modules>-->
 
     <distributionManagement>
         <repository>

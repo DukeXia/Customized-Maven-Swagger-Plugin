@@ -62,7 +62,9 @@ public class CustomizedSwaggerMojo extends AbstractMojo {
         }
 //        3.分析写在代码中的注解，通过分析提取到关键信息
         try {
-            String basePath = (new URL("file", null, new File(this.classPath).getCanonicalFile()) + File.separator).toString();
+//            String basePath = (new URL("file", null, new File(this.classPath).getCanonicalFile()) + File.separator).toString();
+            String basePath = new File(this.classPath).getCanonicalFile() + File.separator;
+            this.getLog().info("地址是: " + basePath);
         } catch (IOException e) {
             e.printStackTrace();
         }
@@ -92,7 +94,8 @@ public class CustomizedSwaggerMojo extends AbstractMojo {
                         .replaceAll(classPath.replaceAll("\\\\", "/"), "")
                         .replaceAll("/", ".")
                         .replaceAll("\\.class", "");
-                className = className.substring(1, className.length());
+                className = className.substring(1);
+                this.getLog().info("扫描到的class的名字是：" + className);
                 if (className.startsWith(this.basePackage)) {
                     try {
                         classes.add(Class.forName(className));
