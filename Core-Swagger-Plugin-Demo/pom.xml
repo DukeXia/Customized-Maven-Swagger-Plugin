@@ -74,7 +74,28 @@
 			<plugin>
 				<groupId>com.cmcm.maven</groupId>
 				<artifactId>Core-Swagger-Plugin</artifactId>
-				<version>1.0-SNAPSHOT</version>
+				<version>1.0</version>
+			</plugin>
+
+			<plugin>
+				<groupId>com.cmcm.maven</groupId>
+				<artifactId>Core-Swagger-Plugin</artifactId>
+				<version>1.0</version>
+				<configuration>
+					<classPath>${basedir}/target/classes</classPath>
+					<libDir>${basedir}/target/${project.artifactId}/WEB-INF/lib</libDir>
+					<basePackage>com.cmcm</basePackage>
+					<targetFile>${basedir}/src/main/webapp/open-api.html</targetFile>
+					<host>cmcm.com</host>
+				</configuration>
+				<executions>
+					<execution>
+						<phase>package</phase>
+						<goals>
+							<goal>generate-html</goal>
+						</goals>
+					</execution>
+				</executions>
 			</plugin>
 		</plugins>
 	</build>
